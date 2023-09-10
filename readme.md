@@ -1,52 +1,21 @@
-### How to use this spring-boot project
+## Bug Fix
+- Fixed an issue in EmployeeController.java: `saveEmployee` method where the `@RequestBody` annotation was missing, causing the method to not parse JSON-formatted data correctly.
 
-- Install packages with `mvn package`
-- Run `mvn spring-boot:run` for starting the application (or use your IDE)
+## Change Syntax
+- Changed the API for operating on a single employee from `employees` to `employee`.
 
-Application (with the embedded H2 database) is ready to be used ! You can access the url below for testing it :
+## Improvement
+- Added logic to return an HTTP status of `NOT_FOUND (404)` with an appended error message when the API cannot retrieve data.
+- Enhanced logging to include employee information, such as ID and Name, during operations.
+- Implemented Spring Boot Security to secure Controller end points.
+- Introduced Database Cache.
 
-- Swagger UI : http://localhost:8080/swagger-ui.html
-- H2 UI : http://localhost:8080/h2-console
+## Features Added
+- Added two API tests for testing security in the Controller.
+- Created API test cases and Security test cases in the `ApiDemoApplicationTests` class.
 
-> Don't forget to set the `JDBC URL` value as `jdbc:h2:mem:testdb` for H2 UI.
+## If Time Permits (TODO)
+- Plan to add additional APIs, such as querying employees within a specified salary range and listing employees by department, etc.
 
-
-
-### Instructions
-
-- download the zip file of this project
-- create a repository in your own github named 'java-challenge'
-- clone your repository in a folder on your machine
-- extract the zip file in this folder
-- commit and push
-
-- Enhance the code in any ways you can see, you are free! Some possibilities:
-  - Add tests
-  - Change syntax
-  - Protect controller end points
-  - Add caching logic for database calls
-  - Improve doc and comments
-  - Fix any bug you might find
-- Edit readme.md and add any comments. It can be about what you did, what you would have done if you had more time, etc.
-- Send us the link of your repository.
-
-#### Restrictions
-- use java 8
-
-
-#### What we will look for
-- Readability of your code
-- Documentation
-- Comments in your code 
-- Appropriate usage of spring boot
-- Appropriate usage of packages
-- Is the application running as expected
-- No performance issues
-
-#### Your experience in Java
-
-Please let us know more about your Java experience in a few sentences. For example:
-
-- I have 3 years experience in Java and I started to use Spring Boot from last year
-- I'm a beginner and just recently learned Spring Boot
-- I know Spring Boot very well and have been using it for many years
+## My Java Experience
+- I have approximately three years of development experience, primarily focused on desktop software and Android apps. My experience with backend development is limited.
