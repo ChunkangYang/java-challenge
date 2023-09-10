@@ -14,6 +14,9 @@
 - Added two API tests for testing security in the Controller.
 - Created API test cases and Security test cases in the `ApiDemoApplicationTests` class.
 
+## Documentation
+- [API_doc.md](https://github.com/ChunkangYang/java-challenge/blob/main/API_doc.md)
+
 ## If Time Permits (TODO)
 - Plan to add additional APIs, such as querying employees within a specified salary range and listing employees by department, etc.
 
